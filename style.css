@@ -1,0 +1,487 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* background-color: #fff; */
+}
+html,body {
+    width: 100%;height: 100%;
+
+}
+.container {
+    width: 100%;
+    height: min-content;
+    padding: 2vh 5vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-size: cover;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* padding: 0vh 4vh; */
+    /* height: 10%;
+    width: 100%; */
+    color: rgb(66, 66, 66);
+}
+.navbar > div > img {
+    width: 130px;
+    transform: scale(0.8);
+    margin-left: 25px;
+}
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+    height: 4vh;
+    font-weight: 400;
+    /* margin-left: -40px; */
+    margin-right: -100px;
+}
+ul > li {
+    cursor: pointer;
+}
+.list-item.active {
+    color: #1d1d1d;
+    font-weight: bold;
+}
+ul > li:hover {
+    font-weight: bold;
+}
+.button-small {
+    padding: 2.5vh 4.5vh;
+    background-color: transparent;
+    /* letter-spacing: .8px; */
+    border-radius: 8px;
+    border: solid 1.5px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(to bottom, #8fc6eb, #2276ad);
+    /* background-origin: border-box; */
+    font-size: 15.5px;
+    font-weight: bold;
+    color: #5CABF4;
+    box-shadow: 1px 1000px 1px #fff inset;
+    cursor: pointer;
+    margin-right: 160px;
+}
+.button-small:hover {
+    background: linear-gradient(180deg, #28A6FB 26.71%, #281dc2a6 99.36%);
+    box-shadow: 0px 20px 24px 3px #28a7fb3b;
+    color: #fff;
+}
+.hero {
+    height: 100vh;
+    width: 100%;
+    padding: 5vh 1.5vh;
+    justify-content: space-around;
+}
+.leftside {
+    float: left;
+    display: inline;
+    width: 45%;
+    height: 60%;
+    padding: 14vh 4vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.leftside > h1 {
+    font-weight: 800;
+    font-size: 3em;
+}
+.leftside > p {
+    margin: 5vh 0vh;
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 30px;
+}
+.leftside > button {
+    width: 35%;
+    height: 30%;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #28A6FB 26.71%, #281dc2a6 99.36%);
+    box-shadow: 0px 20px 24px 3px #28a7fb3b;
+    color: #fff;
+    font-size: 2.2vh;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+.rightside {
+    width: 45%;
+    height: 100%;
+    float: right;
+    display: inline;
+    background-color: #fff;
+    background-size: cover;
+}
+.section2 {
+    height: 100%;
+    width: 100%;
+    padding: 5vh 8vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.leftside2 {
+    float: left;
+    display: inline;
+    width: 45%;
+    height: 80vh;
+    background: url('./assets/pexels-fauxels-3184603.jpg');
+    background-size: cover;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.rightside2 {
+    float: right;
+    display: inline;
+    width: 45%;
+    /* height: 120%; */
+    background-color: #fff;
+    padding: 8vh 2vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.rightside2 > h1 {
+    font-weight: 800;
+    font-size: 3em;
+}
+.rightside2 > p {
+    margin: 5vh 0vh;
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 30px;
+}
+.rightside2 > button {
+    margin-top: 7px;
+    width: 35%;
+    height: 12%;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background: linear-gradient(180deg, #28A6FB 26.71%, #281dc2a6 99.36%);
+    box-shadow: 0px 20px 24px 3px #28a7fb3b;
+    font-size: 2.2vh;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+.leftside3 > h1 {
+    font-weight: 800;
+    font-size: 3em;
+    background-color: #fff;
+}
+.leftside3 > p {
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 30px;
+}
+.leftside > button {
+    cursor: pointer;
+}
+.rightside2 > button {
+    cursor: pointer;
+}
+.leftside > button:hover {
+    width: 36%;
+    height: 31%;
+}
+.rightside2 > button:hover {
+    width: 36.5%;
+    height: 12.5%;
+}
+.section4 {
+    height: 110vh;
+}
+.section4 > h2 {
+    font-size: 3em;
+    display: inline;
+    margin-left: 4%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    float: left;
+}
+.section4 > p {
+    display: inline;
+    margin-top: 4vh;
+    margin-right: 8%;
+    color: #1f1f1f;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    float: right;
+    letter-spacing: .5px;
+    line-height: 25px;
+}
+.services-section {
+    background-color: #fff;
+    padding: 10vh 5vh;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 80%;
+}
+.services-section > *{
+    width: 28%;
+    height: 60%;
+    text-align: left;
+    margin: 2.5vh;
+}
+.services-section > * > object {
+    width: 33%;
+    height: 20%;
+}
+.services-section> * >h3 {
+    font-size: 1.5em;
+    color: #1f1f1f;
+    margin: 2.5vh 2.5vh;
+}
+.services-section > * > p {
+    font-size: 0.9em;
+    color: #726e6eb0;
+    margin: 3vh 3vh;
+}
+.pricing {
+    margin-top: 70px;
+    width: 100%;
+    height: 120%;
+    background-image: linear-gradient(to bottom, #28A6FB 26.71%, #281dc2a6 99.36%);  
+    text-align: center;
+    padding: 10vh 12vh;
+}
+.pricing > h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+}
+.pricing-cards{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    padding: 8vh 0vh 0vh 0vh;
+}
+.pricing-cards > * {
+    background-color: rgb(255, 255, 255);
+    padding-left: 3%;
+    padding-top: 3%;
+    width: 28%;
+    border-radius: 10px;
+    height: 100%;
+    text-align: left;
+    transition: .2s ease-in-out;
+}
+.pricing-cards > *:hover {
+    box-shadow: inset 0px 18vh 0px 0px black;
+}
+.pricing-cards > *:hover > h1 {
+    color: #fff;
+    font-weight: bold;
+}
+.pricing-cards > *:hover > h6{
+    color: #fff;
+    font-weight: bold;
+}
+.pricing-cards > *:hover > button {
+    box-shadow: none;
+    box-shadow: 0px 20px 24px 3px #1e44eb3b;
+    color: #fff;
+}
+.pricing-cards > * > h1 {
+    font-weight: 600;
+    margin-bottom: 4%;
+}
+.pricing-cards > * > h6 {
+    font-weight: 400;
+    margin-bottom: 4%;
+    font-size: .8rem;
+    text-align: left;
+    letter-spacing: .1rem;    
+}
+.pricing-cards > * > ul {
+    list-style: none;
+    margin-top: 20%;
+}
+.pricing-cards>* > ul > li {
+    font-size: 1em;
+    margin-bottom: 2vh;
+    font-weight: bold;
+}
+.pricing-cards > * > ul > li::before{
+    content: '✓';
+    color: #13cc70cb;
+    border: 2px solid #13cc70cb;
+    font-weight: 700;
+    border-radius: 50%;
+    font-size: .9em;
+    margin-right: 2vh;
+    padding: 1px 6px;
+}
+.pricing-cards > * >h2 {
+    margin-top: 12vh;
+    text-align: center;
+    font-size: 2em;
+    color: rgb(32, 32, 32);
+    margin-bottom: 2vh;
+}
+.pricing-cards >* > h2 > span {
+    margin-top: 12vh;
+    text-align: center;
+    color: rgba(150, 149, 149, 0.692);
+    margin-bottom: 2vh;
+}
+.pricing-cards> * > p{
+    text-align: center;
+    font-size: .8em;
+    color: rgba(150, 149, 149, 0.781);
+    font-weight: 500;
+}
+.pricing-cards>*>button{
+    text-align: center;
+    padding: 2vh 7vh;
+    margin: 6vh 6vh;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: transparent;
+    letter-spacing: .8px;
+    border-radius: 10px;
+    border: solid 2px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(to bottom, #8fc6eb, #2276ad);
+    background-origin: border-box;
+    color: #5CABF4;
+    box-shadow: 1px 1000px 1px #fff inset;
+}
+
+.customers-reviews{
+    height: 100%;
+    padding: 10vh 10vh;
+    text-align: center;
+}
+
+.customers-reviews>p{
+    color: #505050bd;
+    margin-top: 2vh;
+}
+
+.reviews-cards{
+    background-color: #fff;
+    margin-top: 5vh;
+    height: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.reviews-cards> * {
+    width: 45%;
+    padding: 4vh 3vh;
+    height: 50%;
+    text-align: left;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: -0px 4px 14px 1px rgba(128, 128, 128, 0.459);
+}
+.reviews-cards > * > p {
+    color: #525252a6;
+    width: 90%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: .8em;
+}
+.reviews-cards > * > img {
+    display: inline;
+    height: 10vh;
+    width: 10vh;
+    margin-top: 8vh;
+    border-radius: 5vh;
+}
+
+.reviews-cards > * > h2 {
+    display: inline;
+    position: relative;
+    top: -6vh;
+    left: 3vh;
+    font-size: 1.5em;
+    color: #292929f1;    
+}
+.reviews-cards > * > h6 {
+    position: relative;
+    color: #666666e3;
+    top: -5vh;
+    left: 14vh;
+    font-size: .8em;
+}
+
+.section-7 {
+    height: 40vh;
+    opacity: 0.8;
+    padding: 3vh 12vh;
+    background: repeating-linear-gradient( -35deg, #1818b6, #2424aa 15%, #444cf7 13%, #444cf7 40% );    
+}
+
+.section-7 > h1 {
+    font-size: 1.8em;
+    margin-top: 4vh;
+    color: #fff;
+    font-weight: 600;
+    text-align: left;
+}
+
+.section-7 > p {
+    font-size: .8em;
+    color: #fff;    
+    margin-top: 5vh;
+    display: inline-block;
+    letter-spacing: .8px;
+}
+
+.section-7 > button {
+    position: relative;
+    top: -8vh;
+    padding: 2vh 6vh;
+    border-radius: 7px;
+    color: #fff;    
+    left: 45%;
+    border-color: #fff;
+    background: linear-gradient( #5555eeab, #2424aa88 15%, #444df77c 13%, #444df773 45% );
+    font-size: .9em;
+    font-weight: bold; 
+}
+
+
+.footer{
+    height: 50vh;
+    display: flex;
+    padding: 5% 5%;
+    justify-content: space-evenly;
+}
+
+.footer>*{
+    width: 20%;
+   margin: 2vh;
+   list-style: none;
+}
+
+.footer>*:first-child{
+    width: 50%;
+    padding-right: 10%;
+    text-align: left;
+}
+
+.logo-footer{
+    transform: scale(.7);
+    margin-left: -5%;
+}
+
+.footer>ul>li:first-child{
+    font-size: 1.2em;
+    font-weight: 500;    
+    margin: 2vh 0vh;
+}
+
+.footer>ul>li ~ li{
+    font-size: .8em;
+    opacity: .7;
+    margin: 2vh 0vh;
+}
+
+.footer>ul:last-child>li~ li{
+    display: inline;
+}
+
+
+
